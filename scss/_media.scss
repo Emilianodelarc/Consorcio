@@ -1,4 +1,12 @@
-@media (min-width: 992px) {
+@media (min-width: 250px){
+  .novedades__noticias{
+    #carrusel{
+      height: 800px;
+    }
+  }
+}
+
+@media (min-width: 500px) {
   .header__cabecera {
     height: 100vh;
     min-height: 640px;
@@ -11,9 +19,9 @@
   }
     .novedades__noticias{
       #carrusel{
-  	   height: 600px;
+  	   height:750px;
        img{
-        width: 700px;
+        width: 500px;
         height: 378px;
         border-radius: 20px;
        }
