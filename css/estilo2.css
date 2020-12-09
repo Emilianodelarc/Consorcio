@@ -333,7 +333,7 @@
   width: 100%;
   background: #fff; }
 
-@media (min-width: 350px) {
+@media (min-width: 250px) {
   .novedades__noticias #carrusel {
     height: 1050px; }
     .novedades__noticias #carrusel img {
@@ -465,7 +465,7 @@
   text-align: center;
   font-style: italic; }
   #carrusel img {
-    width: 300px;
+    width: 250px;
     height: 278px;
     border-radius: 20px; }
 
