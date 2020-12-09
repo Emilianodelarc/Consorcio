@@ -352,9 +352,9 @@
   .novedades__noticias {
     margin: 50px; }
     .novedades__noticias #carrusel {
-      height: 750px; }
+      height: 600px; }
       .novedades__noticias #carrusel img {
-        width: 500px;
+        width: 800px;
         height: 378px;
         border-radius: 20px; } }
 
