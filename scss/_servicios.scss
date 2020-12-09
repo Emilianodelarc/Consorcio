@@ -1,0 +1,35 @@
+@import "var";
+@import "footer";
+.body__imagen{
+  background:$fondo;
+}
+@mixin tabla($background, $text-align) {
+   background:$background;
+   text-align:$text-align;
+}
+@mixin h2($height, $font-family, $text-align, $margin-top) {
+	height:$height;
+	font-family: $tipografia;
+	text-align:$text-align;
+	margin-top:$margin-top;
+}
+
+.section__servicios{
+	margin-top: 200px;
+	margin-bottom: 270px;
+	background:#fff;
+	border-radius: 30px;
+	padding: 20px;
+
+
+	h2{
+		@include h2(100px, $tipografia, center, 25px);
+	}
+	.section__tabla{
+	@include tabla(#F4623A,center);
+	
+		td{
+			list-style:inside;
+		}
+	}	
+}	

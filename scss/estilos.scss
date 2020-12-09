@@ -1,0 +1,160 @@
+@import "var";
+@import "santa";
+@import "expensas";
+@import "servicios";
+@import "actas";
+@import "contacto";
+@import "footer";
+@import "media";
+.body__imagen{
+  background:$fondo;
+}
+#menu {
+  	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  	background-color: #FFA07A;
+  	transition: background-color 0.2s ease;
+
+  .navbar-brand {
+  	font-family: "Merriweather Sans", sans-serif;
+  	font-weight: 700;
+  	color: #fff;
+    &:hover{
+    color:#f4623a; 
+    }
+  }
+  .nav-item{ 
+  	font-family: "Merriweather Sans", sans-serif;
+  	font-weight: 700;
+    font-size: 15px;
+    padding: 12px;
+     
+      .nav-link {
+          color: #6C757D;
+  	     background-image: linear-gradient(dodgerblue, dodgerblue);
+         background-size: 0 5px, auto;
+    	   background-repeat: no-repeat;
+    	   background-position: center bottom;
+    	   transition: all .2s ease-out;
+        &:hover{
+          color: $color;
+          background-size: 100% 5px, auto;
+        }
+      }
+    } 
+}
+
+.header__cabecera {
+    padding-top: 160px;
+    padding-bottom: calc(160px - 72px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+  h1 {
+    font-size: 18px;
+  }
+  .divider{
+  background: #fff;
+  }
+
+  .imagen{
+    border-radius:10px;
+  }
+}
+.novedades__noticias{
+  padding-top: 25px;
+  background:$color;
+  margin-bottom: 12px;
+
+   h2{
+    margin: auto;
+    color: white;
+    text-decoration: underline;
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    padding: 12px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  @for $i from 1 through 3 {
+  .noticia__parrafo#{$i} { font-family: 'Overpass', sans-serif;
+  font-style: italic;
+  font-size: 17px;
+  text-align: center;
+  margin: auto;
+  margin-top: 12px; }
+}
+
+  /*.noticia__parrafo1,
+  .noticia__parrafo2,
+  .noticia__parrafo3{
+    font-family: 'Overpass', sans-serif;
+  font-style: italic;
+  font-size: 17px;
+  text-align: center;
+  margin: auto;
+  margin-top: 12px;
+  }*/
+  a{
+    width: 150px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  }
+}
+#carrusel{
+  color: white;
+  height: 600px;
+  text-align: center;
+  font-style: italic;
+    img{
+      width: 400px;
+      height: 278px;
+      border-radius: 20px;
+    }
+}
+
+
+.cartel{
+  text-align: center;
+  margin: 50px;
+
+    .boton-s{
+      box-shadow: 0 2px 5px 2px;
+
+      a{
+        color:#fff;
+        text-decoration: none;
+      }
+    }
+      .fa-viruses{
+        margin-right: 10px;
+        animation-name: flotar;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        @keyframes flotar {
+          0% {
+        transform: translateY(0%);
+          }
+          50% {
+        transform: translateY(50%);
+          }
+          100% {
+        transform: translateY(0%);
+          }
+        }
+      }
+    .boton{
+    box-shadow: 0 2px 5px 2px;
+    margin-right: 80px;
+  }
+}
+
+  
+
+
+

@@ -1,0 +1,40 @@
+@import "var";
+@import "footer";
+.body__imagen{
+  background:$fondo;
+}
+.section__contacto{
+	margin-top: 200px;
+	margin-bottom: 80px;
+	background:#fff;
+	border-radius: 25px;
+	padding: 20px;
+	background:$color;
+
+	label{
+		font-family: "roboto", sans-serif;
+		margin-left: 5px;
+		.fa-user{
+			margin-right:10px;
+		}
+		.fa-envelope{
+			margin-right: 10px;
+		}
+		.fa-phone-alt{
+			margin-right: 10px;
+		}
+		.fa-building{
+			margin-right: 10px;
+		}
+	}
+	h2{
+		font-style: italic;
+		font-family: $tipografia;
+		padding: 25px;
+		text-align: center;
+		margin-top: 25px;
+	}
+	.solid{
+		border-top: 2px solid #000000;
+	}
+}

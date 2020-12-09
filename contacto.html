@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+		<script src="https://kit.fontawesome.com/28b7e49f61.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilo2.css">
+
+		<title>Contacto</title>
+	</head>
+	<body class="body__imagen">
+		<main class="contenedor">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="menu">
+            		<div class="container">
+                		<a class="navbar-brand js-scroll-trigger" href="#">Primera Junta</a>
+                		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menuResponsive" aria-controls="menuResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                		<div class="collapse navbar-collapse" id="menuResponsive">
+                    		<ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        		<li class="nav-item">
+                        			<a class="nav-link js-scroll-trigger" href="index.html">Inicio</a>
+                        		</li>
+                        		<li class="nav-item">
+                        			<a class="nav-link js-scroll-trigger" href="Expensas.html">Expensas</a>
+                        		</li>
+                        		<li class="nav-item">
+                        			<a class="nav-link js-scroll-trigger" href="Servicios.html">Servicios</a>
+                        		</li>
+                        		<li class="nav-item">
+                        			<a class="nav-link js-scroll-trigger" href="Actas.html">Actas</a>
+                        		</li>
+                        		<li class="nav-item">
+                        			<a class="nav-link js-scroll-trigger" href="Contacto.html">Contacto</a>
+                        		</li>
+                    		</ul>
+                		</div>
+            		</div>
+        		</nav>
+			<section class="section__contacto container h-100">
+				<!-- MEJORAR ASPECTO, HACER UNA CAJA QUE RECUADRE-->
+				<h2>Contacto</h2>
+				<hr class="solid my-4">
+				<form class="container">
+					<div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="nombre"><i class="fas fa-user"></i>Nombre</label>
+					      <input type="email" class="form-control" id="nombre" placeholder="Nombre" required="">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="apellido">Apellido</label>
+					      <input type="text" class="form-control" id="apellido" placeholder="Apellido" required="">
+					    </div>
+						</div>
+						<div class="form-group">
+					    	<label for="email"><i class="fas fa-envelope"></i>E-mail</label>
+					    	<input type="email" class="form-control" id="email" placeholder="example@example.com" required="">
+						</div>
+						<div class="form-group">
+					    	<label for="telefono"><i class="fas fa-phone-alt"></i>Telefono</label>
+					    	<input type="text" class="form-control" id="telefono" placeholder="11-23456789" required="">
+						</div>
+						<div class="form-row">
+					    	<div class="form-group col-md-6">
+					     	 <label for="unidad"><i class="fas fa-building"></i>U.F</label>
+					     	 <input type="text" class="form-control" id="unidad">
+					    	</div>
+					    	<div class="form-group col-md-6">
+					    	<label for="usted">usted es?</label>
+					    	<select id="usted" class="form-control">
+					        	<option selected>Seleccione</option>
+					        	<option>Dueño</option>
+					        	<option>Inquilino</option>
+					        	<option>Apoderado</option>
+					    	</select>
+					    </div>
+					    <div class=" container py-1 text-center">
+							<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+						</div>
+					</div>  
+				</form>
+			</section>
+			<footer class="footer__pie page-footer font-small">
+				<div class="footer-copyright text-center py-3">© 2020 Copyright:
+    				<a href="#">EMILIANO DEL ARCO</a>
+ 				</div>
+			</footer>
+		</main>	
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

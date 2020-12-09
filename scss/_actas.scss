@@ -1,0 +1,18 @@
+@import "var";
+@import "footer";
+.body__imagen{
+  background:$fondo;
+}
+.section__actas {
+	padding: 20px;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	background:#fff;
+	border-radius: 30px;
+	h2{
+		@include h2(100px, $tipografia, center, 25px);
+	}
+	.solid{
+		border-top: 2px solid #999;
+	}
+}
