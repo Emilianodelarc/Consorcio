@@ -333,9 +333,13 @@
   width: 100%;
   background: #fff; }
 
-@media (min-width: 250px) {
+@media (min-width: 350px) {
   .novedades__noticias #carrusel {
-    height: 800px; } }
+    height: 1000px; }
+    .novedades__noticias #carrusel img {
+      width: 300px;
+      height: 378px;
+      border-radius: 20px; } }
 
 @media (min-width: 500px) {
   .header__cabecera {
