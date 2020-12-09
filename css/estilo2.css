@@ -350,7 +350,7 @@
     .header__cabecera h1 {
       font-size: 20px; }
   .novedades__noticias {
-    margin: 50px; }
+    max-resolution: 100px; }
     .novedades__noticias #carrusel {
       height: 600px; }
       .novedades__noticias #carrusel img {
@@ -410,6 +410,7 @@
   background: #F4623A;
   margin: 25px;
   border-radius: 35px;
+  margin-bottom: 150px;
   /*.noticia__parrafo1,
   .noticia__parrafo2,
   .noticia__parrafo3{
