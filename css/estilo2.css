@@ -398,7 +398,8 @@
 .novedades__noticias {
   padding-top: 25px;
   background: #F4623A;
-  margin-bottom: 12px;
+  margin: 50px;
+  border-radius: 35px;
   /*.noticia__parrafo1,
   .noticia__parrafo2,
   .noticia__parrafo3{
