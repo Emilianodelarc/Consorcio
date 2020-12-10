@@ -1,15 +1,4 @@
-@media (min-width: 250px){
-  .novedades__noticias{
-    #carrusel{
-      height:1050px;
-      img{
-        width: 250px;
-        height: 378px;
-        border-radius:20px;
-      }
-    }
-  }
-}
+
 
 @media (min-width: 500px) {
   .header__cabecera {
@@ -24,14 +13,6 @@
   }
     .novedades__noticias{
       max-resolution:100px;
-      #carrusel{
-  	   height:600px;
-       img{
-        width: 800px;
-        height: 378px;
-        border-radius: 20px;
-       }
-      }
     }
 }
 @media (min-width: 1200px) {
