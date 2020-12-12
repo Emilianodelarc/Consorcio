@@ -10,9 +10,29 @@
 	background:#fff;
 	border-radius: 30px;
 	h2{
-		@include h2(100px, $tipografia, center, 25px);
+	    font-family: "Merienda", cursive;
+	    text-align: center;
+	    margin-top: 25px;
 	}
 	.solid{
 		border-top: 2px solid #999;
+	}
+	.card{
+		border: 1px solid #3829F7;
+		background:#F76464;
+	
+		.card-img-top{
+			width: 100px;
+			height: 170px;
+			margin: auto;
+		}
+		.card-title{
+			color:white;
+			border-top:1px solid #3829F7;
+		}
+		.card-text{
+			color:white;
+			border-bottom:1px solid #3829F7;
+		}
 	}
 }

@@ -292,12 +292,24 @@
   background: #fff;
   border-radius: 30px; }
   .section__actas h2 {
-    height: 100px;
     font-family: "Merienda", cursive;
     text-align: center;
     margin-top: 25px; }
   .section__actas .solid {
     border-top: 2px solid #999; }
+  .section__actas .card {
+    border: 1px solid #3829F7;
+    background: #F76464; }
+    .section__actas .card .card-img-top {
+      width: 100px;
+      height: 170px;
+      margin: auto; }
+    .section__actas .card .card-title {
+      color: white;
+      border-top: 1px solid #3829F7; }
+    .section__actas .card .card-text {
+      color: white;
+      border-bottom: 1px solid #3829F7; }
 
 .footer__pie {
   width: 100%;
