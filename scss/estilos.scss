@@ -6,6 +6,10 @@
 @import "contacto";
 @import "footer";
 @import "media";
+@font-face {
+  font-family: "optima-italic";
+  src: url(optima-italic.ttf);
+}
 .body__imagen{
   background:$fondo;
 }
@@ -102,6 +106,8 @@
   border-radius:20px;
 
   h2{
+    font-family: "optima-italic";
+    font-style: italic;
     color:white;
     text-decoration: underline;
     text-align: center;
