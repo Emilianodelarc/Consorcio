@@ -94,8 +94,9 @@
   background:#000000;
   border-radius:8px;
 }
-.img-fluid{
+.img-fluid-1{
   margin-top: 12px;
+  max-width: 50%;
 }
 .seudo_noticias{
   border-radius:20px;
@@ -111,6 +112,7 @@
   }
 }
 .cartel{
+  padding-top:25px;
   text-align: center;
   margin: 50px;
   display: flex;
