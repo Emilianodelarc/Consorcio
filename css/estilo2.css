@@ -448,8 +448,8 @@
     font-size: 16px; } }
 
 @font-face {
-  font-family: "optima-italic";
-  src: url(fuente/optima-italic.ttf); }
+  font-family: "optima";
+  src: url(fuente/optima.woff); }
 
 .body__imagen {
   background: url(../img/cuerpoFondo3-min.png); }
