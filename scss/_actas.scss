@@ -19,7 +19,7 @@
 		border-top: 2px solid #999;
 	}
 	.card{
-		border: 1px solid #3829F7;
+		@include bordes-solido;
 		background:#F76464;
 	
 		.card-img-top{
@@ -28,12 +28,12 @@
 			margin: auto;
 		}
 		.card-title{
-			color:white;
-			border-top:1px solid #3829F7;
+			color:$letra-color;
+			@include bordes-solido;
 		}
 		.card-text{
-			color:white;
-			border-bottom:1px solid #3829F7;
+			color:$letra-color;
+			@include bordes-solido;
 		}
 	}
 }

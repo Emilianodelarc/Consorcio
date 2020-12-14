@@ -1,3 +1,8 @@
 $fondo:url(../img/cuerpoFondo3-min.png);
 $color: #F4623A;
 $tipografia:'Merienda', cursive;
+$letra-color:#fff;
+$img-fluid:100%;
+@mixin bordes-solido{
+	border-bottom: 1px solid #3829F7;
+}

@@ -379,17 +379,17 @@
   .section__actas .solid {
     border-top: 2px solid #999; }
   .section__actas .card {
-    border: 1px solid #3829F7;
+    border-bottom: 1px solid #3829F7;
     background: #F76464; }
     .section__actas .card .card-img-top {
       width: 100px;
       height: 170px;
       margin: auto; }
     .section__actas .card .card-title {
-      color: white;
-      border-top: 1px solid #3829F7; }
+      color: #fff;
+      border-bottom: 1px solid #3829F7; }
     .section__actas .card .card-text {
-      color: white;
+      color: #fff;
       border-bottom: 1px solid #3829F7; }
 
 .footer__pie {
@@ -448,8 +448,10 @@
     font-size: 16px; } }
 
 @font-face {
-  font-family: "optima";
-  src: url(fuente/optima.woff); }
+  font-family: 'Optima-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Optima-italic"), url("../fuente/Optima-italic.ttf") format("ttf"); }
 
 .body__imagen {
   background: url(../img/cuerpoFondo3-min.png); }
@@ -513,7 +515,7 @@
     justify-content: center; }
 
 .border-bottom-blue {
-  border-bottom: solid 1px #032a63; }
+  border-bottom: 1px solid #3829F7; }
 
 .card {
   background: #000000;
@@ -528,11 +530,11 @@
   .seudo_noticias h2 {
     font-family: "optima";
     font-style: italic;
-    color: white;
+    color: #fff;
     text-decoration: underline;
     text-align: center; }
   .seudo_noticias h5 {
-    color: white;
+    color: #fff;
     font-size: 16px; }
 
 .cartel {

@@ -7,8 +7,10 @@
 @import "footer";
 @import "media";
 @font-face {
-  font-family: "optima";
-  src: url(fuente/optima.woff);
+    font-family: 'Optima-italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima-italic'), url('../fuente/Optima-italic.ttf') format('ttf');
 }
 .body__imagen{
   background:$fondo;
@@ -73,7 +75,7 @@
     padding: 20px 25px;
     left: 0px;
     bottom: 0px;
-    color: #fff;
+    color: $letra-color;
     background: linear-gradient(to bottom, rgba(0,0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 75%, #000000 100%);
       h1{
       font-size: 20px;
@@ -92,7 +94,7 @@
   }
 }
 .border-bottom-blue{
-  border-bottom: solid 1px #032a63;
+  @include bordes-solido;
 }
 .card{
   background:#000000;
@@ -100,7 +102,7 @@
 }
 .img-fluid-1{
   margin-top: 12px;
-  max-width: 50%;
+  max-width: ($img-fluid/2);
 }
 .seudo_noticias{
   border-radius:20px;
@@ -108,12 +110,12 @@
   h2{
     font-family: "optima";
     font-style: italic;
-    color:white;
+    color:$letra-color;
     text-decoration: underline;
     text-align: center;
   } 
   h5{
-    color: white;
+    color: $letra-color;
     font-size: 16px;
   }
 }
@@ -128,7 +130,7 @@
       box-shadow: 0 2px 5px 2px;
 
       a{
-        color:#fff;
+        color:$letra-color;
         text-decoration: none;
       }
     }
