@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .app .logo {
   color: #17706e;
   position: absolute;
@@ -304,7 +305,7 @@
 
 .section__expensas {
   margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 60px;
   background: #fff;
   border-radius: 30px;
   padding: 20px; }
@@ -322,6 +323,159 @@
         color: black; }
         .section__expensas .section__tabla td a:hover {
           color: #fff; }
+
+.pago {
+  padding-top: 15px;
+  border-radius: 25px;
+  border: 2px solid white;
+  background: #F4623A;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 680px; }
+  .pago .col1 {
+    perspective: 1000;
+    transform-style: preserve-3d; }
+    .pago .col1 .tarjeta {
+      position: relative;
+      width: 420px;
+      height: 250px;
+      margin-bottom: 85px;
+      margin-right: 10px;
+      border-radius: 17px;
+      box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+      transition: all 1s;
+      transform-style: preserve-3d; }
+      .pago .col1 .tarjeta .frente {
+        position: absolute;
+        border-radius: 17px;
+        border: 1px solid black;
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        transform: translateZ(1px);
+        transition: background 0.3s;
+        z-index: 50;
+        background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px);
+        backface-visibility: hidden; }
+        .pago .col1 .tarjeta .frente .tipo {
+          position: absolute;
+          width: 75px;
+          height: 45px;
+          top: 20px;
+          right: 20px; }
+          .pago .col1 .tarjeta .frente .tipo .molde {
+            width: 200px;
+            float: right; }
+        .pago .col1 .tarjeta .frente .numero_tarjeta {
+          position: absolute;
+          font-size: 26px;
+          font-weight: 500;
+          letter-spacing: -1px;
+          top: 110px;
+          color: var(--text-color);
+          word-spacing: 3px;
+          transition: color 0.5s; }
+        .pago .col1 .tarjeta .frente .fecha {
+          position: absolute;
+          bottom: 40px;
+          right: 55px;
+          width: 90px;
+          height: 35px;
+          color: var(--text-color);
+          -webkit-transition: color 0.5s;
+          transition: color 0.5s; }
+          .pago .col1 .tarjeta .frente .fecha .fecha_vence {
+            font-size: 12px;
+            position: absolute;
+            margin-left: 22px;
+            margin-top: 12px;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.5s; }
+          .pago .col1 .tarjeta .frente .fecha:after {
+            content: "MES / AÑO";
+            position: absolute;
+            display: block;
+            font-size: 7px;
+            margin-left: 20px; }
+          .pago .col1 .tarjeta .frente .fecha:before {
+            content: "valid \a thru";
+            position: absolute;
+            display: block;
+            font-size: 8px;
+            white-space: pre;
+            margin-top: 8px; }
+        .pago .col1 .tarjeta .frente .nombreCompleto {
+          position: absolute;
+          font-size: 20px;
+          bottom: 40px;
+          color: var(--text-color);
+          transition: color 0.5s; }
+  .pago .col2 input {
+    display: block;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 7px;
+    font-size: 17px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    transition: background 0.5s; }
+    .pago .col2 input:focus {
+      outline-width: 0;
+      background: rgba(31, 134, 252, 0.15);
+      transition: background 0.5s; }
+  .pago .col2 label {
+    padding-left: 8px;
+    font-size: 15px;
+    color: #444; }
+  .pago .col2 .ccv {
+    width: 40%; }
+  .pago .col2 .pagar {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: none;
+    background: #42C2DF;
+    color: white;
+    font-size: 20px;
+    -webkit-transition: background 0.4s;
+    transition: background 0.4s;
+    cursor: pointer; }
+    .pago .col2 .pagar:hover {
+      background: #3594A9;
+      transition: background 0.4s; }
+    .pago .col2 .pagar .ok {
+      width: 300px; }
+  .pago .chip {
+    position: absolute;
+    width: 55px;
+    height: 40px;
+    background: #bbb;
+    border-radius: 7px; }
+    .pago .chip:after {
+      content: '';
+      display: block;
+      width: 35px;
+      height: 25px;
+      border-radius: 4px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #ddd; }
 
 .body__imagen {
   background: url(../img/cuerpoFondo3-min.png); }

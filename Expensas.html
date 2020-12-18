@@ -23,7 +23,7 @@
 		            <span></span>
         		Primera Junta</a>
 			</div>
-			<!-- BOTON RESPONSIVE -->
+			<!-- BOTÓN RESPONSIVE -->
     		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menuResponsive" aria-controls="menuResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     		<!-- MENU -->
     		<div class="collapse navbar-collapse" id="menuResponsive">
@@ -46,12 +46,12 @@
         		</ul>
     		</div>
 		</nav>
-    		<!-- seccion tabla de expensas -->
+    		<!-- sección tabla de expensas -->
 		<section class="section__expensas container">
 			<h2>Expensas</h2>
 			<table class="section__tabla container table">  
 	  			<tr>
-				  	<th scope="col">Expensa</th>
+				  	<th scope="col">Expensas</th>
 				  	<th scope="col">Periodo</th>
 				  	<th scope="col">Dirigido a:</th>
 	  			</tr>
@@ -86,6 +86,49 @@
 		  			</td>
 		  		</tr>
 			</table>
+		</section>
+		<section class="container pago"> 
+			<div class="col1">
+				<div class="tarjeta">
+					<div class="frente">
+						<div class="tipo">
+						  <img src="img/tarjeta.png" class="molde"/>
+						</div>
+						<span class="chip"></span>
+						<span class="numero_tarjeta">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+						<div class="fecha"><span class="fecha_vence">MM / AAAA</span></div>
+						<span class="nombreCompleto">Nombre Titular</span>
+					</div>
+				</div>
+			</div>
+			<div class="col2">
+				<label>Numero de Tarjeta</label>
+				<input class="numero" type="text" required>
+				<label>Nombre Titular</label>
+				<input class="inputname" type="text" placeholder=""/>
+				<label>Expiracion</label>
+				<input class="expira" type="text" placeholder="MM / AAAA"/>
+				<label>Numero de seguridad</label>
+				<input class="ccv" type="text" placeholder="CVC" required/>
+				<button type="button" class="btn pagar" data-toggle="modal" data-target="#pagoexitoso">Pagar</button>
+				<div class="modal fade" id="pagoexitoso" tabindex="-1" role="dialog" aria-labelledby="pagoexitoso" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+							  	</button>
+							</div>
+							<div class="modal-body">
+							  <img src="img/pago_exitoso.png" class="ok"/>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<!-- pie de pagina -->
 		<footer class="footer__pie page-footer font-small">
