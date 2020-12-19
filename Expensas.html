@@ -102,34 +102,17 @@
 						</div>
 					</div>
 				</div>
-				<div class="col2">
+				<form class="col2">
 					<label>Numero de Tarjeta</label>
 					<input class="numero" type="text" required>
-					<label>Nombre Titular</label>
-					<input class="inputname" type="text" placeholder=""/>
-					<label>Expiración</label>
-					<input class="expira" type="text" placeholder="MM / AAAA"/>
-					<label>Numero de seguridad</label>
-					<input class="ccv" type="text" placeholder="CVC" required/>
-					<button type="button" class="btn pagar" data-toggle="modal" data-target="#pagoexitoso">Pagar</button>
-					<div class="modal fade" id="pagoexitoso" tabindex="-1" role="dialog" aria-labelledby="pagoexitoso" aria-hidden="true">
-						<div class="modal-dialog modal-dialog-centered" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-								<img src="img/pago_exitoso.png" class="ok"/>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+					<label for="titular">Nombre Titular</label>
+					<input name="titular" type="text" id="titular" placeholder="Jose Perez"/>
+					<label for="vence">Expiración</label>
+					<input class="expira" type="text" id="vence" placeholder="MM / AAAA" required/>
+					<label for="seguridad">Numero de seguridad</label>
+					<input class="ccv" type="text" id="seguridad" placeholder="CVC" required/>
+					<input type="submit" class="pagar"value="Pagar">
+				</form>
 			</div>
 		</section>
 		<!-- pie de pagina -->
