@@ -87,43 +87,45 @@
 		  		</tr>
 			</table>
 		</section>
-		<section class="container pago"> 
-			<div class="col1">
-				<div class="tarjeta">
-					<div class="frente">
-						<div class="tipo">
-						  <img src="img/tarjeta.png" class="molde"/>
+		<section class="pago_todo container">
+			<div class="pago_cuerpo">
+				<div class="col1">
+					<div class="tarjeta">
+						<div class="frente">
+							<div class="tipo">
+							<img src="img/tarjeta.png" class="molde"/>
+							</div>
+							<span class="chip"></span>
+							<span class="numero_tarjeta">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+							<div class="fecha"><span class="fecha_vence">MM / AAAA</span></div>
+							<span class="nombreCompleto">Nombre Titular</span>
 						</div>
-						<span class="chip"></span>
-						<span class="numero_tarjeta">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
-						<div class="fecha"><span class="fecha_vence">MM / AAAA</span></div>
-						<span class="nombreCompleto">Nombre Titular</span>
 					</div>
 				</div>
-			</div>
-			<div class="col2">
-				<label>Numero de Tarjeta</label>
-				<input class="numero" type="text" required>
-				<label>Nombre Titular</label>
-				<input class="inputname" type="text" placeholder=""/>
-				<label>Expiracion</label>
-				<input class="expira" type="text" placeholder="MM / AAAA"/>
-				<label>Numero de seguridad</label>
-				<input class="ccv" type="text" placeholder="CVC" required/>
-				<button type="button" class="btn pagar" data-toggle="modal" data-target="#pagoexitoso">Pagar</button>
-				<div class="modal fade" id="pagoexitoso" tabindex="-1" role="dialog" aria-labelledby="pagoexitoso" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-							  	</button>
-							</div>
-							<div class="modal-body">
-							  <img src="img/pago_exitoso.png" class="ok"/>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+				<div class="col2">
+					<label>Numero de Tarjeta</label>
+					<input class="numero" type="text" required>
+					<label>Nombre Titular</label>
+					<input class="inputname" type="text" placeholder=""/>
+					<label>Expiración</label>
+					<input class="expira" type="text" placeholder="MM / AAAA"/>
+					<label>Numero de seguridad</label>
+					<input class="ccv" type="text" placeholder="CVC" required/>
+					<button type="button" class="btn pagar" data-toggle="modal" data-target="#pagoexitoso">Pagar</button>
+					<div class="modal fade" id="pagoexitoso" tabindex="-1" role="dialog" aria-labelledby="pagoexitoso" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+								<img src="img/pago_exitoso.png" class="ok"/>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+								</div>
 							</div>
 						</div>
 					</div>
