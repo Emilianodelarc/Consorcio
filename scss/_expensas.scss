@@ -43,10 +43,8 @@
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			justify-content: space-around;
+			justify-content: space-around ;
 			.col1 {
-				perspective: 1000;
-				transform-style: preserve-3d;
 				.tarjeta {
 					position: relative;
 					width: 420px;
@@ -86,7 +84,6 @@
 								font-weight: 500;
 								letter-spacing: -1px;
 								top: 110px;
-								color: var(--text-color);
 								word-spacing: 3px;
 								transition: color 0.5s;
 							}
@@ -104,9 +101,7 @@
 									position: absolute;
 									margin-left: 22px;
 									margin-top: 12px;
-									color: var(--text-color);
 									font-weight: 500;
-									transition: color 0.5s;
 								}
 								&:after {
 									content: "MES / AÑO";
@@ -128,8 +123,6 @@
 								position: absolute;
 								font-size: 20px;
 								bottom: 40px;
-								color: var(--text-color);
-								transition: color 0.5s;
 							}
 						
 					}
@@ -174,7 +167,6 @@
 					background: #42C2DF;
 					color: white;
 					font-size: 20px;
-					-webkit-transition: background 0.4s;
 					transition: background 0.4s;
 					cursor: pointer;
 					&:hover {

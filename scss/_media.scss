@@ -12,6 +12,41 @@
     }
   }
 }
+@media (max-width:530px){
+  .pago_todo{
+    .frente{
+      padding-left: 42px !important;
+      margin-left: 10px;
+      left: 66px;
+      width: 67% !important;
+    }
+    .chip{
+      top:79px;
+      left:11px
+    }
+    .numero_tarjeta{
+      top: 119px;
+      left: 7px;
+    }
+    .nombreCompleto{
+      left:1px;
+    }
+    .fecha{
+      &:after{
+        left: 19px;
+      }
+      &::before{
+        margin-top: 0px;
+        left: 13px;
+      }
+    }
+    .fecha_vence{
+      font-size: 9px !important;
+      margin-left: 38px !important;
+      margin-top: 10px !important;
+    }
+  }
+}
 @media (max-width: 992px){
   .pago_todo{
     .pago_cuerpo{
