@@ -584,7 +584,9 @@
   .pago_todo .fecha_vence {
     font-size: 9px !important;
     margin-left: 38px !important;
-    margin-top: 10px !important; } }
+    margin-top: 10px !important; }
+  .pago_todo .modal-content {
+    width: 92% !important; } }
 
 @media (max-width: 992px) {
   .pago_todo .pago_cuerpo {
