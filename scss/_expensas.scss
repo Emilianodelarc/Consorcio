@@ -1,9 +1,9 @@
 @import "var";
-
 @import "servicios";
 .body__imagen{
   background:$fondo;
 }
+  /* TITULO*/
 .section__expensas{
 	margin-top: 200px;
 	margin-bottom: 60px;
@@ -29,6 +29,7 @@
 		}
 	}	
 }
+/* Diseño de Tarjeta*/
 .pago_todo{
 	background: #fff;
 	margin-top: 70px;

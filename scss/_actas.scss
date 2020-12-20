@@ -3,7 +3,7 @@
 .body__imagen{
   background:$fondo;
 }
-      // TITULO
+      /* TITULO*/
 .section__actas {
 	padding: 20px;
 	margin-top: 200px;
@@ -18,7 +18,7 @@
 	.solid{
 		border-top: 2px solid #999;
 	}
-	         // CARDS DE ARCHIVOS PDF
+	         /* CARDS DE ARCHIVOS PDF */
 	.card{
 		@include bordes-solido;
 		background:#F76464;
