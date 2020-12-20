@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-		<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/estilo2.css">
 
-		<title>Expensas</title>
-	</head>
-	<body class="body__imagen">
-			<!-- Menu bootstrap -->
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="menu">
-    		<!-- LOGO -->
-    		<div class="app">
-        		<a class="logo js-scroll" href="#">
-        			<span></span>
-		            <span></span>
-		            <span></span>
-		            <span></span>
-        		Primera Junta</a>
-			</div>
-			<!-- BOTÓN RESPONSIVE -->
-    		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menuResponsive" aria-controls="menuResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    		<!-- MENU -->
-    		<div class="collapse navbar-collapse" id="menuResponsive">
-        		<ul class="navbar-nav ml-auto my-2 my-lg-0">
-            		<li class="nav-item">
-            			<a class="nav-link" href="index.html">Inicio</a>
-            		</li>
-            		<li class="nav-item">
-            			<a class="nav-link" href="Expensas.html">Expensas</a>
-            		</li>
-            		<li class="nav-item">
-            			<a class="nav-link" href="Servicios.html">Servicios</a>
-            		</li>
-            		<li class="nav-item">
-            			<a class="nav-link" href="Actas.html">Actas</a>
-            		</li>
-            		<li class="nav-item">
-            			<a class="nav-link" href="Contacto.html">Contacto</a>
-            		</li>
-        		</ul>
-    		</div>
-		</nav>
-    		<!-- sección tabla de expensas -->
-		<section class="section__expensas container">
-			<h2>Expensas</h2>
-			<table class="section__tabla container table">  
-	  			<tr>
-				  	<th scope="col">Expensas</th>
-				  	<th scope="col">Periodo</th>
-				  	<th scope="col">Dirigido a:</th>
-	  			</tr>
-				<tr>
-				  	<td><a download="img/muestra.png" href="img/muestra.png">Archivo.pdf</td><!-- Simula descarga-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo2.css">
+
+    <title>Expensas</title>
+</head>
+
+<body class="body__imagen">
+    <!-- Menu bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="menu">
+        <!-- LOGO -->
+        <div class="app">
+            <a class="logo js-scroll" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            	Primera Junta</a>
+        </div>
+        <!-- BOTÓN RESPONSIVE -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menuResponsive" aria-controls="menuResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="menuResponsive">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Expensas.html">Expensas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Actas.html">Actas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- sección tabla de expensas -->
+    <section class="section__expensas container">
+        <h2>Expensas</h2>
+        <table class="section__tabla container table">
+            <tr>
+                <th scope="col">Expensas</th>
+                <th scope="col">Periodo</th>
+                <th scope="col">Dirigido a:</th>
+            </tr>
+            <tr>
+                <td><a download="img/muestra.png" href="img/muestra.png">Archivo.pdf</td><!-- Simula descarga-->
 				  	<td>09/2020</td>
 				 	<td>
 		  				<ol>
@@ -97,6 +99,7 @@
 				</tr>
 			</table>
 		</section>
+		<!-- simulador de pago con tarjeta-->
 		<section class="pago_todo container">
 			<div class="pago_cuerpo">
 				<div class="col1">
@@ -112,6 +115,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- Formulario de ingreso de datos de tarjeta-->
 				<form class="col2">
 					<label>Numero de Tarjeta</label>
 					<input class="numero" type="text" maxlength="16" required/>
@@ -129,10 +133,10 @@
 		<footer class="footer__pie page-footer font-small">
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
 				<a href="#">EMILIANO DEL ARCO</a>
-				</div>
-		</footer>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	</body>
 </html>
