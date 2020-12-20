@@ -31,171 +31,165 @@
 }
 .pago_todo{
 	background: #fff;
-	margin-top: 200px;
+	margin-top: 70px;
 	margin-bottom: 60px;
 	border-radius: 30px;
 	padding: 20px;
-		.pago_cuerpo {
-			padding-top: 15px;
-			border-radius: 25px;
-			border:2px solid white;
-			background: #F4623A;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: space-around ;
-			.col1 {
-				.tarjeta {
-					position: relative;
-					width: 420px;
-					height: 250px;
-					margin-bottom: 85px;
-					margin-right: 10px;
+	.pago_cuerpo {
+		padding-top: 15px;
+		border-radius: 25px;
+		border:2px solid white;
+		background: #F4623A;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around ;
+		.col1 {
+			.tarjeta {
+				position: relative;
+				width: 420px;
+				height: 250px;
+				margin-bottom: 85px;
+				margin-right: 10px;
+				border-radius: 17px;
+				box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+				transition: all 1s;
+				transform-style: preserve-3d;
+				.frente {
+					position: absolute;
 					border-radius: 17px;
-					box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
-					transition: all 1s;
-					transform-style: preserve-3d;
-					.frente {
+					border:1px solid black;
+					padding: 50px;
+					width: 100%;
+					height: 100%;
+					background: goldenrod;
+					.tipo {
 						position: absolute;
-						border-radius: 17px;
-						border:1px solid black;
-						padding: 50px;
-						width: 100%;
-						height: 100%;
-						transform: translateZ(1px);
-						transition: background 0.3s;
-						z-index: 50;
-						background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px);
-						backface-visibility: hidden;
-							.tipo {
-								position: absolute;
-								width: 75px;
-								height: 45px;
-								top: 20px;
-								right: 20px;
-								.molde {
-									width: 200px;
-									float: right;
-								}
+						width: 75px;
+						height: 45px;
+						top: 20px;
+						right: 20px;
+						.molde {
+							width: 200px;
+							float: right;
+						}
+					}
+					.numero_tarjeta {
+						position: absolute;
+						font-size: 26px;
+						font-weight: 500;
+						letter-spacing: -1px;
+						top: 110px;
+						word-spacing: 3px;
+						transition: color 0.5s;
+					}
+					.fecha {
+						position: absolute;
+						bottom: 40px;
+						right: 55px;
+						width: 90px;
+						height: 35px;
+						.fecha_vence {
+							font-size: 12px;
+							position: absolute;
+							margin-left: 22px;
+							margin-top: 12px;
+							font-weight: 500;
+						}
+						&:after {
+							content: "MES / AÑO";
+							position: absolute;
+							display: block;
+							font-size: 7px;
+							margin-left: 20px;
 							}
-							.numero_tarjeta {
-								position: absolute;
-								font-size: 26px;
-								font-weight: 500;
-								letter-spacing: -1px;
-								top: 110px;
-								word-spacing: 3px;
-								transition: color 0.5s;
+						&:before {
+							content: "valid \a true";
+							position: absolute;
+							display: block;
+							font-size: 8px;
+							white-space: pre;
+							margin-top: 8px;
 							}
-							.fecha {
-								position: absolute;
-								bottom: 40px;
-								right: 55px;
-								width: 90px;
-								height: 35px;
-								color: var(--text-color);
-								-webkit-transition: color 0.5s;
-								transition: color 0.5s;
-								.fecha_vence {
-									font-size: 12px;
-									position: absolute;
-									margin-left: 22px;
-									margin-top: 12px;
-									font-weight: 500;
-								}
-								&:after {
-									content: "MES / AÑO";
-									position: absolute;
-									display: block;
-									font-size: 7px;
-									margin-left: 20px;
-								}
-								&:before {
-									content: "valid \a thru";
-									position: absolute;
-									display: block;
-									font-size: 8px;
-									white-space: pre;
-									margin-top: 8px;
-								}
-							}
-							.nombreCompleto {
-								position: absolute;
-								font-size: 20px;
-								bottom: 40px;
-							}
-						
+						}
+						.nombreCompleto {
+							position: absolute;
+							font-size: 20px;
+							bottom: 40px;
+						}
 					}
 				}
 			}
-			.col2{
-				input {
-					display: block;
-					width: 200px;
-					height: 30px;
-					padding-left: 10px;
-					padding-top: 3px;
-					padding-bottom: 3px;
-					margin: 7px;
-					font-size: 17px;
-					border-radius: 20px;
-					background: rgba(0, 0, 0, 0.05);
-					border: none;
-					transition: background 0.5s;
-					&:focus {
-						outline-width: 0;
-						background: rgba(31, 134, 252, 0.15);
-						transition: background 0.5s;
-					}
-				}
-				label {
-					padding-left: 8px;
-					font-size: 15px;
-					color: #444;
-				}
-				.ccv {
-					width: 40%;
-				}
-				.pagar {
-					width: 200px;
-					height: 50px;
-					position: relative;
-					display: block;
-					margin: 20px auto;
-					border-radius: 10px;
-					border: none;
-					background: #42C2DF;
-					color: white;
-					font-size: 20px;
-					transition: background 0.4s;
-					cursor: pointer;
-					&:hover {
-						background: #3594A9;
-						transition: background 0.4s;
-					}
-					.ok{
-						width: 300px;
-					}
-				}
-			}  
-			.chip {
-				position: absolute;
-				width: 55px;
-				height: 40px;
-				background: #bbb;
-				border-radius: 7px;
-				&:after {
-				content: '';
+		.col2{
+			input {
 				display: block;
-				width: 35px;
-				height: 25px;
-				border-radius: 4px;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				margin: auto;
-				background: #ddd;
+				width: 250px;
+				height: 30px;
+				padding-left: 10px;
+				padding-top: 3px;
+				padding-bottom: 3px;
+				margin: 7px;
+				font-size: 17px;
+				border-radius: 20px;
+				background: rgba(0, 0, 0, 0.05);
+				border: none;
+				transition: background 0.5s;
+				&:focus {
+					outline-width: 0;
+					background: rgba(31, 134, 252, 0.15);
+					transition: background 0.5s;
 				}
+			}
+			label {
+				font-family:"optima", sans-serif ;
+				padding-left: 8px;
+				font-size: 15px;
+				color: #444;
+			}
+			.ccv {
+				width: 40%;
+			}
+			.pagar {
+				width: 200px;
+				height: 50px;
+				position: relative;
+				display: block;
+				margin: 20px auto;
+				border-radius: 10px;
+				border: none;
+				background: #42C2DF;
+				color: white;
+				font-size: 20px;
+				transition: background 0.4s;
+				cursor: pointer;
+				&:hover {
+					background: #3594A9;
+					transition: background 0.4s;
+				}
+				.ok{
+					width: 300px;
+				}
+			}
+		}  
+		.chip {
+			position: absolute;
+			width: 55px;
+			height: 40px;
+			background: #ffc107;
+			border-radius: 7px;
+			border: 0.3px solid black;
+			&:after {
+			content: '';
+			display: block;
+			width: 35px;
+			height: 25px;
+			border-radius: 4px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			background: #f9f084;
 			}
 		}
-	}				
+	}
+}				
