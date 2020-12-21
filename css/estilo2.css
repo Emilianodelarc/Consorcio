@@ -350,9 +350,7 @@
       margin-bottom: 85px;
       margin-right: 10px;
       border-radius: 17px;
-      box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
-      transition: all 1s;
-      transform-style: preserve-3d; }
+      box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1); }
       .pago_todo .pago_cuerpo .col1 .tarjeta .frente {
         position: absolute;
         border-radius: 17px;
@@ -376,8 +374,7 @@
           font-weight: 500;
           letter-spacing: -1px;
           top: 110px;
-          word-spacing: 3px;
-          transition: color 0.5s; }
+          word-spacing: 3px; }
         .pago_todo .pago_cuerpo .col1 .tarjeta .frente .fecha {
           position: absolute;
           bottom: 40px;
@@ -418,16 +415,15 @@
       font-size: 17px;
       border-radius: 20px;
       background: rgba(0, 0, 0, 0.05);
-      border: none;
-      transition: background 0.5s; }
+      border: 1px solid black; }
       .pago_todo .pago_cuerpo .col2 input:focus {
         outline-width: 0;
-        background: rgba(31, 134, 252, 0.15);
-        transition: background 0.5s; }
+        background: rgba(31, 134, 252, 0.15); }
     .pago_todo .pago_cuerpo .col2 label {
       font-family: "optima", sans-serif;
       padding-left: 8px;
       font-size: 15px;
+      font-weight: bold;
       color: #444; }
     .pago_todo .pago_cuerpo .col2 .ccv {
       width: 40%; }
@@ -442,11 +438,9 @@
       background: #42C2DF;
       color: white;
       font-size: 20px;
-      transition: background 0.4s;
       cursor: pointer; }
       .pago_todo .pago_cuerpo .col2 .pagar:hover {
-        background: #3594A9;
-        transition: background 0.4s; }
+        background: #3594A9; }
       .pago_todo .pago_cuerpo .col2 .pagar .ok {
         width: 300px; }
     .pago_todo .pago_cuerpo .chip {
@@ -719,4 +713,5 @@
     transform: translateY(0%); } }
   .cartel .boton {
     box-shadow: 0 2px 5px 2px;
-    margin-right: 80px; }
+    margin-right: 80px;
+    cursor: pointer; }
